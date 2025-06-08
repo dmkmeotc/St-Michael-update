@@ -36,7 +36,7 @@
     }
   },
   "PathnamesPage": {
-    "description": "<p>መንገዶችም በቋንቋ ተቀይረዋል።</p><p>እርስዎ የመነቃቂ ቋንቋ እንግሊዝኛን ብትጠቀሙ፣ በአድራሻ መስመሩ <code>/en/pathnames</code> ይመለከታል።</p><p>ቋንቋውን ወደ ጀርመን በመቀየር፣ አድራሻው እንዲሁ ይቀየራል (<code>/de/pfadnamen</code>)።</p>",
+    "description": "<p>መንገዶችም በቋንቋ ተቀይረዋል።</p><p>እርስዎ የመነቃቂ ቋንቋ እንግሊዝኛን ብትጠቀሙ፣ በአድራሻ መስመሩ <code>/en/pathnames</code> ይመለከታል።</p><p>ቋንቋውን ወደ  በመቀየር፣ አድራሻው እንዲሁ ይቀየራል (<code>/de/pfadnamen</code>)።</p>",
     "title": "መንገዶች"
   },
   "LocaleSwitcher": {

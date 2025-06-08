@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           direction="horizontal"
           className="w-full min-h-screen  rounded-lg border md:min-w-[450px]"
         >
-          <ResizablePanel defaultSize={20} >
+          <ResizablePanel defaultSize={20}>
             <div className="h-screen overflow-hidden pr-6">
               <Sidebar />
             </div>
