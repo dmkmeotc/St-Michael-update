@@ -10,7 +10,7 @@ export function StMichalCard() {
     <Card className="w-full flex bg-transparent overflow-hidden rounded-none border-0 shadow-none m-0 p-0">
       <CardHeader>
         <Avatar className='w-44 h-54 m-[2px] place-self-center'>
-          <AvatarImage src="/michatEt.png" />
+          <AvatarImage src="/michatEt.jpeg" />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
         <h1 className="scroll-m-20 text-center text-2xl md:text-[1rem] lg:text-xl xl:text-2xl font-extrabold tracking-tight text-balance">
