@@ -1,0 +1,67 @@
+{
+  "Error": {
+    "description": "<p>እኛ የማንችለውን ስህተት ተደርጓል።</p><p>እባኮትን <retry>ገፁን ዳግም በመጫን</retry> ይሞክሩ።</p>",
+    "title": "አንዳንድ ችግሮች ተፈጥሯል!"
+  },
+  "IndexPage": {
+    "description": "ቤተክርስቲያን",
+    "title": "ቤተክርስቲያን"
+  },
+  "LocaleLayout": {
+    "title": "ቤተክርስቲያን"
+  },
+  "Manifest": {
+    "name": "next-intl አብራሪ ምሳሌ"
+  },
+  "Navigation": {
+    "home": "መነሻ",
+    "pathnames": "መንገዶች"
+  },
+  "NotFoundPage": {
+    "description": "እባኮትን የአድራሻ አማራጭ መስመር እንደገና ይፈትሹ ወይም ወደ የታወቀ ገፅ በመተንተን ይሂዱ።",
+    "title": "ገፁ አልተገኘም"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "",
+        "href": "",
+        "title": "መሰናዶች"
+      },
+      "source": {
+        "description": "",
+        "href": "",
+        "title": ""
+      }
+    }
+  },
+  "PathnamesPage": {
+    "description": "<p>መንገዶችም በቋንቋ ተቀይረዋል።</p><p>እርስዎ የመነቃቂ ቋንቋ እንግሊዝኛን ብትጠቀሙ፣ በአድራሻ መስመሩ <code>/en/pathnames</code> ይመለከታል።</p><p>ቋንቋውን ወደ ጀርመን በመቀየር፣ አድራሻው እንዲሁ ይቀየራል (<code>/de/pfadnamen</code>)።</p>",
+    "title": "መንገዶች"
+  },
+  "LocaleSwitcher": {
+    "label": "ቋንቋ ቀይር",
+    "locale": "{locale, select, en {English} am {አማርኛ} other {ያልታወቀ}}"
+  },
+  "Header": {
+    "holyCelebrationAlt": "ቅድስት በዓል",
+    "churchName": "ደብረ መህረት ቅዱስ ሚካኤል ቤተክርስቲያን",
+    "churchSubname": "የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን",
+    "pageTitle": "እምነት ከባህል ጋር የሚገናኝበት..."
+  },
+  "AnnouncementsCard": {
+    "title": "ማስታወቂያዎች",
+    "description": "የቤተክርስቲያን ክስተቶች \n ዜናና አዳዲስ መረጃዎች",
+    "buttonText": "አባል ይሁኑ"
+  },
+  "StMichalCard": {
+    "serviceScheduleTitle": "የአገልግሎት መርሃ ግብር",
+    "serviceScheduleTimes": "እሑድ በ3:00 ሰዓት ማለዳ\nእሮብ በ6:00 ሰዓት ቀትር",
+    "buttonText": "አገልግሎት ይጠይቁ"
+  },
+  "SupportCard": {
+    "supportTitle": "ቤተክርስቲያኑን \n ደግፉ",
+    "supportDescription": "ለሁሉም \n ዕድሜ ተስማሚ \n ፕሮግራሞች",
+    "supportCallToAction": "ቤተክርስቲያኑን \n ደግፉ"
+  }
+}
