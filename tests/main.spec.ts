@@ -5,9 +5,9 @@ it('handles i18n routing', async ({page}) => {
   await expect(page).toHaveURL('/en');
 
   // A cookie remembers the last locale
-  await page.goto('/de');
+  await page.goto('/am');
   await page.goto('/');
-  await expect(page).toHaveURL('/de');
+  await expect(page).toHaveURL('/am');
   await page
     .getByRole('combobox', {name: 'Sprache ändern'})
     .selectOption({value: 'en'});
@@ -20,7 +20,7 @@ it('handles not found pages', async ({page}) => {
   await page.goto('/unknown');
   page.getByRole('heading', {name: 'Page not found'});
 
-  await page.goto('/de/unknown');
+  await page.goto('/am/unknown');
   page.getByRole('heading', {name: 'Seite nicht gefunden'});
 });
 
@@ -35,7 +35,7 @@ it("handles not found pages for routes that don't match the middleware", async (
 });
 
 it('sets caching headers', async ({request}) => {
-  for (const pathname of ['/en', '/en/pathnames', '/de', '/de/pfadnamen']) {
+  for (const pathname of ['/en', '/en/pathnames', '/am', '/am/pfadnamen']) {
     expect((await request.get(pathname)).headers()['cache-control']).toContain(
       's-maxage=31536000'
     );
@@ -46,7 +46,7 @@ it('can be used to configure metadata', async ({page}) => {
   await page.goto('/en');
   await expect(page).toHaveTitle('next-intl example');
 
-  await page.goto('/de');
+  await page.goto('/am');
   await expect(page).toHaveTitle('next-intl Beispiel');
 });
 
@@ -54,7 +54,7 @@ it('can be used to localize the page', async ({page}) => {
   await page.goto('/en');
   page.getByRole('heading', {name: 'next-intl example'});
 
-  await page.goto('/de');
+  await page.goto('/am');
   page.getByRole('heading', {name: 'next-intl Beispiel'});
 });
 
@@ -68,8 +68,8 @@ it('sets a cookie when necessary', async ({page}) => {
 
   await page
     .getByRole('combobox', {name: 'Change language'})
-    .selectOption({value: 'de'});
-  await expect(page).toHaveURL('/de');
+    .selectOption({value: 'am'});
+  await expect(page).toHaveURL('/am');
   expect(await getCookieValue()).toBe('NEXT_LOCALE=de');
 
   await page
@@ -82,17 +82,17 @@ it('sets a cookie when necessary', async ({page}) => {
   // https://nextjs.org/docs/app/building-your-application/caching#router-cache
   await page
     .getByRole('combobox', {name: 'Change language'})
-    .selectOption({value: 'de'});
-  await expect(page).toHaveURL('/de');
-  expect(await getCookieValue()).toBe('NEXT_LOCALE=de');
+    .selectOption({value: 'am'});
+  await expect(page).toHaveURL('/am');
+  expect(await getCookieValue()).toBe('NEXT_LOCALE=am');
 });
 
 it("sets a cookie when requesting a locale that doesn't match the `accept-language` header", async ({
   page
 }) => {
-  const response = await page.goto('/de');
+  const response = await page.goto('/am');
   const value = await response?.headerValue('set-cookie');
-  expect(value).toContain('NEXT_LOCALE=de;');
+  expect(value).toContain('NEXT_LOCALE=am;');
   expect(value).toContain('Path=/;');
   expect(value).toContain('SameSite=lax');
 });
@@ -112,22 +112,22 @@ it('serves a sitemap.xml', async ({page}) => {
 <url>
 <loc>http://localhost:3000/en</loc>
 <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3000/en" />
-<xhtml:link rel="alternate" hreflang="de" href="http://localhost:3000/de" />
+<xhtml:link rel="alternate" hreflang="am" href="http://localhost:3000/am" />
 </url>
 <url>
 <loc>http://localhost:3000/de</loc>
 <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3000/en" />
-<xhtml:link rel="alternate" hreflang="de" href="http://localhost:3000/de" />
+<xhtml:link rel="alternate" hreflang="am" href="http://localhost:3000/am" />
 </url>
 <url>
 <loc>http://localhost:3000/en/pathnames</loc>
 <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3000/en/pathnames" />
-<xhtml:link rel="alternate" hreflang="de" href="http://localhost:3000/de/pfadnamen" />
+<xhtml:link rel="alternate" hreflang="am" href="http://localhost:3000/am/pfadnamen" />
 </url>
 <url>
 <loc>http://localhost:3000/de/pfadnamen</loc>
 <xhtml:link rel="alternate" hreflang="en" href="http://localhost:3000/en/pathnames" />
-<xhtml:link rel="alternate" hreflang="de" href="http://localhost:3000/de/pfadnamen" />
+<xhtml:link rel="alternate" hreflang="am" href="http://localhost:3000/am/pfadnamen" />
 </url>
 </urlset>
 `
@@ -138,7 +138,7 @@ it('provides a manifest', async ({page}) => {
   const response = await page.goto('/manifest.webmanifest');
   const body = await response!.json();
   expect(body).toEqual({
-    name: 'next-intl example',
+    name: 'michaleCherch',
     start_url: '/',
     theme_color: '#101E33'
   });
