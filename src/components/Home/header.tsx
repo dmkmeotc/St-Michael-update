@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import LocaleSwitcher from './LocaleSwitcher'
+import LocaleSwitcher from '../LocaleSwitcher'
 import { useTranslations } from 'next-intl'
 
 const Header = () => {

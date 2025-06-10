@@ -1,16 +1,17 @@
 import Sidebar from "@/components/Sidebar";
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
+import { MobileView } from "./mobileView";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return <>
-   <main className="w-full min-h-screen m-0 bg-ethDeepBlue-900">
+   <main className="w-full min-h-screen m-0 bg-ethLightBlue-900">
       {/* Desktop View */}
       <div className="hidden md:block">
         <ResizablePanelGroup
           direction="horizontal"
           className="w-full min-h-screen  rounded-lg border md:min-w-[450px]"
         >
-          <ResizablePanel defaultSize={20}>
+          <ResizablePanel defaultSize={20} minSize={20} maxSize={45}>
             <div className="h-screen overflow-hidden pr-6">
               <Sidebar />
             </div>
@@ -28,7 +29,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Mobile View */}
       <div className="block md:hidden">
-        <ResizablePanelGroup
+        
+       {/*  <ResizablePanelGroup
           direction="horizontal"
           className="min-h-screen w-full rounded-lg border"
         >
@@ -45,7 +47,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               {children}
             </div>
           </ResizablePanel>
-        </ResizablePanelGroup>
+        </ResizablePanelGroup> */}
+<MobileView/>
+
+        <div className="flex flex-col w-full h-screen overflow-y-auto items-start justify-start border-2">
+          {children}
+        </div>
       </div>
     </main>
     

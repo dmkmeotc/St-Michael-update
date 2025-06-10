@@ -23,7 +23,7 @@ const Homebody = () => {
  <Carousel autoPlay={false} interval={5000} infiniteLoop={true} showThumbs={false} showStatus={false} showIndicators={true}>
       <div>
       <div
-  className=" grid grid-cols-1 sm:grid-cols-2 m-0 p-0 bg-[rgb(253,248,242)]  w-full px-8 border-2 "
+  className=" grid grid-cols-1 place-items-center sm:grid-cols-2 m-0 p-0 bg-[rgb(253,248,242)]  w-full px-8 border-2  "
   style={{ gridTemplateRows: 'auto auto' }}
 >
   <div className="row-span-2">

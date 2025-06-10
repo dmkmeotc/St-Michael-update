@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { ChevronDown, ChevronRight } from 'lucide-react'
 import { menuItems } from '@/data/menuItems'
 import { cn } from '@/lib/utils'
+import QRCodeCard from './QRCodeCard'
 
 export default function Sidebar() {
   const pathname = usePathname()
@@ -68,7 +69,9 @@ export default function Sidebar() {
             </Link>
           )
         })}
+         <QRCodeCard value="https://your-website.com"  text={"Scan to Join"}/>
       </nav>
+          
     </aside>
   )
 }

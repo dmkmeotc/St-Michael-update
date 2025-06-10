@@ -1,7 +1,7 @@
 
-import Fotter from "@/components/footer";
-import Header from "@/components/header";
-import Homebody from "@/components/homebody";
+import Fotter from "@/components/Home/footer";
+import Header from "@/components/Home/header";
+import Homebody from "@/components/Home/homebody";
 import {Locale} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 
