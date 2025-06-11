@@ -11,7 +11,7 @@ import ShareButtonWithModal from './ShareButtonWithModal'
 import { useMenuItems } from '@/data/menuItems'
 
 export default function Sidebar() {
-   const menuItems = useMenuItems();
+  const menuItems = useMenuItems()
   const pathname = usePathname()
   const [open, setOpen] = useState<Record<string, boolean>>({})
 
@@ -20,15 +20,14 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="w-full  h-screen overflow-y-auto custom-scrollbar text-ethGray-100 border-r">
-      <nav className="flex flex-col justify-between gap-2">
+    <aside className="w-full h-screen flex flex-col justify-between border-r text-ethGray-100 p-4 overflow-y-auto custom-scrollbar">
+      {/* Top Menu */}
+      <nav className="flex flex-col gap-2">
         {menuItems.map((item) => {
           const isActive = pathname === item.href
 
           return item.children ? (
             <div key={item.label}>
-                
-                
               <div
                 onClick={() => toggle(item.label)}
                 className="flex items-center justify-between cursor-pointer rounded-md hover:opacity-50 transition-colors px-3 py-2"
@@ -37,7 +36,6 @@ export default function Sidebar() {
                 {open[item.label] ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
               </div>
 
-              {/* Subitems */}
               {open[item.label] && (
                 <div className="pl-6 mt-1 flex flex-col gap-1">
                   {item.children.map((child) => (
@@ -54,10 +52,6 @@ export default function Sidebar() {
                   ))}
                 </div>
               )}
-
-
-
-
             </div>
           ) : (
             <Link
@@ -72,17 +66,22 @@ export default function Sidebar() {
             </Link>
           )
         })}
-        <div  className='flex flex-col items-center  justify-center gap-1'>
-         <QRCodeCard value="https://st-michael-update.vercel.app/en/StMichael/"  text={"Scan to Join"} size={100}/>
-             <ShareButtonWithModal
-        shareTitle="Awesome Blog Post"
-        shareText="Check out this blog post!"
-        shareHashtags={['blog', 'nextjs', 'webdev']}
-        className="mt-4"
-      />
-      </div>
       </nav>
-          
+
+      {/* Bottom QR and Share */}
+      <div className="flex flex-col items-center justify-center gap-2 mt-6">
+        <QRCodeCard
+          value="https://st-michael-update.vercel.app/en/StMichael/"
+          text="Scan to Join"
+          size={100}
+        />
+        <ShareButtonWithModal
+          shareTitle="Awesome Blog Post"
+          shareText="Check out this blog post!"
+          shareHashtags={['blog', 'nextjs', 'webdev']}
+          className="mt-2 bg-transparent"
+        />
+      </div>
     </aside>
   )
 }
