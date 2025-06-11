@@ -20,7 +20,7 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="w-full   h-screen overflow-y-auto custom-scrollbar text-ethGray-100 border-r">
+    <aside className="w-full  h-screen overflow-y-auto custom-scrollbar text-ethGray-100 border-r">
       <nav className="flex flex-col gap-2">
         {menuItems.map((item) => {
           const isActive = pathname === item.href
@@ -72,7 +72,7 @@ export default function Sidebar() {
             </Link>
           )
         })}
-         <QRCodeCard value="https://your-website.com"  text={"Scan to Join"} size={100}/>
+         <QRCodeCard value="https://st-michael-update.vercel.app/en/StMichael/"  text={"Scan to Join"} size={100}/>
              <ShareButtonWithModal
         shareTitle="Awesome Blog Post"
         shareText="Check out this blog post!"
