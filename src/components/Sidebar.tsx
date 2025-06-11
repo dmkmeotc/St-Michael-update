@@ -4,11 +4,14 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChevronDown, ChevronRight } from 'lucide-react'
-import { menuItems } from '@/data/menuItems'
+
 import { cn } from '@/lib/utils'
 import QRCodeCard from './QRCodeCard'
+import ShareButtonWithModal from './ShareButtonWithModal'
+import { useMenuItems } from '@/data/menuItems'
 
 export default function Sidebar() {
+   const menuItems = useMenuItems();
   const pathname = usePathname()
   const [open, setOpen] = useState<Record<string, boolean>>({})
 
@@ -69,7 +72,13 @@ export default function Sidebar() {
             </Link>
           )
         })}
-         <QRCodeCard value="https://your-website.com"  text={"Scan to Join"}/>
+         <QRCodeCard value="https://your-website.com"  text={"Scan to Join"} size={100}/>
+             <ShareButtonWithModal
+        shareTitle="Awesome Blog Post"
+        shareText="Check out this blog post!"
+        shareHashtags={['blog', 'nextjs', 'webdev']}
+        className="mt-4"
+      />
       </nav>
           
     </aside>

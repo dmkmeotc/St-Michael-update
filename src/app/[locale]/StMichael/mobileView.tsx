@@ -17,7 +17,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 export function  MobileView() {
       const t = useTranslations('Header')
   return (
-    <div className="sm:hidden fixed top-0 left-0 ">
+    <div className="md:hidden fixed top-0 left-0 ">
     <Sheet   >
       <SheetTrigger asChild>
         <Button variant="outline" className="m-4">
@@ -25,7 +25,7 @@ export function  MobileView() {
             </Button>
       </SheetTrigger>
       <SheetContent side={"left"} className="bg-ethLightBlue-900">
-          <div className="w-full m-4 border-2 border-ethBlack-900 p-2">
+          <div className="w-full m-4 p-2">
                <h1 className="mobile-church-name inline-flex">
 
                  <Avatar className='w-12 h-12 m-[2px] place-self-center'>

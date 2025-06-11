@@ -1,49 +1,55 @@
-export const menuItems = [
-  { label: "home", href: "/home" },
-  { label: "announcements", href: "/announcements" },
-  {
-    label: "deacons",
-    children: [
-      { label: "allDeacons", href: "/deacons" },
-      { label: "schedules", href: "/deacons/schedules" },
-    ],
-  },
-  {
-    label: "donation",
-    children: [
-      { label: "makeDonation", href: "/donation" },
-      { label: "fundraisingEvents", href: "/donation/events" },
-    ],
-  },
-  { label: "ourDiocese", href: "/diocese" },
-  {
-    label: "ourChurch",
-    children: [
-      { label: "about", href: "/church/about" },
-      { label: "events", href: "/church/events" },
-    ],
-  },
-  { label: "sundaySchool", href: "/sunday-school" },
-  {
-    label: "youthCorner",
-    children: [
-      { label: "programs", href: "/youth/programs" },
-      { label: "media", href: "/youth/media" },
-    ],
-  },
-  {
-    label: "prayersQuotes",
-    children: [
-      { label: "morningPrayers", href: "/prayers/morning" },
-      { label: "quotes", href: "/quotes" },
-    ],
-  },
-  {
-    label: "holyFamily",
-    children: [
-      { label: "info", href: "/holy-family/info" },
-      { label: "meetings", href: "/holy-family/meetings" },
-    ],
-  },
-  { label: "contactUs", href: "/contact" },
-]
+import { useTranslations } from 'next-intl';
+
+export const useMenuItems = () => {
+  const t = useTranslations('Navigationmenu');
+
+  return [
+    { label: t('home'), href: "/" },
+    { label: t('announcements'), href: "/announcements" },
+    {
+      label: t('deacons'),
+      children: [
+        { label: t('allDeacons'), href: "/deacons" },
+        { label: t('schedules'), href: "/deacons/schedules" },
+      ],
+    },
+    {
+      label: t('donation'),
+      children: [
+        { label: t('makeDonation'), href: "/donation" },
+        { label: t('fundraisingEvents'), href: "/donation/events" },
+      ],
+    },
+    { label: t('ourDiocese'), href: "/diocese" },
+    {
+      label: t('ourChurch'),
+      children: [
+        { label: t('about'), href: "/church/about" },
+        { label: t('events'), href: "/church/events" },
+      ],
+    },
+    { label: t('sundaySchool'), href: "/sunday-school" },
+    {
+      label: t('youthCorner'),
+      children: [
+        { label: t('programs'), href: "/youth/programs" },
+        { label: t('media'), href: "/youth/media" },
+      ],
+    },
+    {
+      label: t('prayersQuotes'),
+      children: [
+        { label: t('morningPrayers'), href: "/prayers/morning" },
+        { label: t('quotes'), href: "/quotes" },
+      ],
+    },
+    {
+      label: t('holyFamily'),
+      children: [
+        { label: t('info'), href: "/holy-family/info" },
+        { label: t('meetings'), href: "/holy-family/meetings" },
+      ],
+    },
+    { label: t('contactUs'), href: "/contact" },
+  ];
+};

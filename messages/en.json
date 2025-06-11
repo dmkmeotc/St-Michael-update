@@ -22,20 +22,20 @@
     "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
     "title": "Page not found"
   },
-  "PageLayout": {
-    "links": {
-      "docs": {
-        "description": "",
-        "href": "",
-        "title": "Docs"
-      },
-      "source": {
-        "description": "",
-        "href": "",
-        "title": ""
-      }
+ "PageLayout": {
+  "links": {
+    "docs": {
+      "description": "Explore our church documents and resources",
+      "href": "/documents",
+      "title": "Church Documents"
+    },
+    "source": {
+      "description": "View the source of our faith and traditions",
+      "href": "/about/our-faith",
+      "title": "Our Faith Sources"
     }
-  },
+  }
+},
   "PathnamesPage": {
     "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to Amharic, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>",
     "title": "Pathnames"
@@ -63,10 +63,48 @@
     "serviceScheduleTimes": "Sunday at 9:00 AM\nWednesday at 12:00 PM",
     "buttonText": "Request Service"
   },
+  
   "SupportCard": {
     "supportTitle": "Support \n the \n Church",
     "supportDescription": "Programs \n for all \n ages",
     "supportCallToAction": "SUPPORT \n THE \n CHURCH"
+  },
+  "ContactInfo": {
+    "title": "Contact Information",
+    "addressTitle": "Address:",
+    "addressLine1": "3010 Earl Place NE",
+    "addressLine2": "Washington, DC 20018",
+    "hoursTitle": "Operating Hours:",
+    "officeHours": "Office:",
+    "officeTime": "Monday - Friday, 7:00 AM – 4:00 PM",
+    "serviceHours": "Service:",
+    "serviceTime": "Sunday, 4:00 AM – 11:00 AM"
   }
+,
 
+   "Navigationmenu": {
+    "home": "Home",
+    "announcements": "Announcements",
+    "deacons": "Deacons",
+    "allDeacons": "All Deacons",
+    "schedules": "Schedules",
+    "donation": "Donation",
+    "makeDonation": "Make a Donation",
+    "fundraisingEvents": "Fundraising Events",
+    "ourDiocese": "Our Diocese",
+    "ourChurch": "Our Church",
+    "about": "About",
+    "events": "Events",
+    "sundaySchool": "Sunday School",
+    "youthCorner": "Youth Corner",
+    "programs": "Programs",
+    "media": "Media",
+    "prayersQuotes": "Prayers & Quotes",
+    "morningPrayers": "Morning Prayers",
+    "quotes": "Quotes",
+    "holyFamily": "Holy Family",
+    "info": "Info",
+    "meetings": "Meetings",
+    "contactUs": "Contact Us"
+  }
 }

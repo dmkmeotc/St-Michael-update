@@ -8,6 +8,8 @@ import DotNav from "./DotNav";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import Loading from "@/app/loading";
+import { Suspense } from "react";
           
          
 
@@ -27,10 +29,22 @@ const Homebody = () => {
   style={{ gridTemplateRows: 'auto auto' }}
 >
   <div className="row-span-2">
+        <Suspense fallback={<Loading/>}>
     <StMichalCard />
+    </Suspense>
     </div>
-  <div><AnnouncementsCard /></div>
-  <div><SupportCard /></div>
+  
+  <div>
+      <Suspense fallback={<Loading/>}>
+    <AnnouncementsCard />
+    </Suspense>
+    </div>
+ 
+  <div>
+      <Suspense fallback={<Loading/>}>
+    <SupportCard />
+    </Suspense>
+    </div>
 </div>
 
 

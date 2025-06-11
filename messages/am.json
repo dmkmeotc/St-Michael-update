@@ -22,19 +22,19 @@
     "title": "ገፁ አልተገኘም"
   },
   "PageLayout": {
-    "links": {
-      "docs": {
-        "description": "",
-        "href": "",
-        "title": "መሰናዶች"
-      },
-      "source": {
-        "description": "",
-        "href": "",
-        "title": ""
-      }
+  "links": {
+    "docs": {
+      "description": "የቤተክርስቲያናችን ሰነዶች እና መረጃዎችን ይመልከቱ",
+      "href": "/documents",
+      "title": "የቤተክርስቲያን ሰነዶች"
+    },
+    "source": {
+      "description": "የእምነታችን እና ባህላችን ምንጮችን ይመልከቱ",
+      "href": "/about/our-faith",
+      "title": "የእምነታችን ምንጮች"
     }
-  },
+  }
+},
   "PathnamesPage": {
     "description": "<p>መንገዶችም በቋንቋ ተቀይረዋል።</p><p>እርስዎ የመነቃቂ ቋንቋ እንግሊዝኛን ብትጠቀሙ፣ በአድራሻ መስመሩ <code>/en/pathnames</code> ይመለከታል።</p><p>ቋንቋውን ወደ  በመቀየር፣ አድራሻው እንዲሁ ይቀየራል (<code>/de/pfadnamen</code>)።</p>",
     "title": "መንገዶች"
@@ -59,9 +59,46 @@
     "serviceScheduleTimes": "እሑድ በ3:00 ሰዓት ማለዳ\nእሮብ በ6:00 ሰዓት ቀትር",
     "buttonText": "አገልግሎት ይጠይቁ"
   },
+  
   "SupportCard": {
     "supportTitle": "ቤተክርስቲያኑን \n ደግፉ",
     "supportDescription": "ለሁሉም \n ዕድሜ ተስማሚ \n ፕሮግራሞች",
     "supportCallToAction": "ቤተክርስቲያኑን \n ደግፉ"
+  },
+  "ContactInfo": {
+    "title": "የእውቂያ መረጃ",
+    "addressTitle": "አድራሻ:",
+    "addressLine1": "3010 እርል ፕሌስ ሰሜን ምስራቅ",
+    "addressLine2": "ዋሽንግተን ዲሲ 20018",
+    "hoursTitle": "የሥራ ሰዓት:",
+    "officeHours": "ቢሮ:",
+    "officeTime": "ሰኞ - አርብ፣ ከጥዋቱ 7:00 - ምሽት 4:00",
+    "serviceHours": "አገልግሎት:",
+    "serviceTime": "እሁድ፣ ከጥዋቱ 4:00 - ከጠዋቱ 11:00"
+  },
+ "Navigationmenu": {
+    "home": "መነሻ",
+    "announcements": "ማስታወቂያዎች",
+    "deacons": "ዲያቆናት",
+    "allDeacons": "ሁሉም ዲያቆናት",
+    "schedules": "መርሐግብሮች",
+    "donation": "ልገሳ",
+    "makeDonation": "ልገሳ �ድርግ",
+    "fundraisingEvents": "ገንዘብ ማሰባሰብ ዝግጅቶች",
+    "ourDiocese": "ዲያቆናችን",
+    "ourChurch": "ቤተክርስቲያናችን",
+    "about": "ስለ",
+    "events": "ዝግጅቶች",
+    "sundaySchool": "እሁድ ት/ቤት",
+    "youthCorner": "ወጣቶች ማዕከል",
+    "programs": "ፕሮግራሞች",
+    "media": "ሚዲያ",
+    "prayersQuotes": "ጸሎቶች እና ጥቅሶች",
+    "morningPrayers": "ጠዋት ጸሎት",
+    "quotes": "ጥቅሶች",
+    "holyFamily": "ቅድስት ቤተሰብ",
+    "info": "መረጃ",
+    "meetings": "ስብሰባዎች",
+    "contactUs": "አግኙን"
   }
 }

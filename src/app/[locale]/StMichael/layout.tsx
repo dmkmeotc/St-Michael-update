@@ -1,10 +1,12 @@
 import Sidebar from "@/components/Sidebar";
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/components/ui/resizable";
 import { MobileView } from "./mobileView";
+import { Suspense } from "react";
+import Loading from "../loading";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return <>
-   <main className="w-full min-h-screen m-0 bg-ethLightBlue-900">
+   <main className="w-full min-h-screen m-0 bg-slate-850">
       {/* Desktop View */}
       <div className="hidden md:block">
         <ResizablePanelGroup
@@ -13,7 +15,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         >
           <ResizablePanel defaultSize={20} minSize={20} maxSize={45}>
             <div className="h-screen overflow-hidden pr-6">
+               <Suspense fallback={<Loading/>}>
               <Sidebar />
+              </Suspense>
             </div>
           </ResizablePanel>
 

@@ -1,11 +1,11 @@
 
-import Fotter from "@/components/Home/footer";
 import Header from "@/components/Home/header";
 import Homebody from "@/components/Home/homebody";
 import {Locale} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 
-import {use} from 'react';
+import {Suspense, use} from 'react';
+import Loading from "../loading";
 
    type Props = {
      params: Promise<{locale: Locale}>;
@@ -22,11 +22,13 @@ const Side = ({params}: Props) => {
 
     return ( 
 
-    <div  className=" grid grid-cols-1  place-items-center   min-h-screen w-full  gap-4   ">
-    
+    <div  className=" grid grid-cols-1  place-items-center  mx-0  min-h-screen w-full  gap-2  mb-4 ">
+       <Suspense fallback={<Loading/>}>
        <Header/>
-       <Homebody/>
-       <Fotter/>
+       </Suspense>
+         <Suspense fallback={<Loading/>}>
+       <Homebody/>  
+       </Suspense>
     </div> );    
 }
  

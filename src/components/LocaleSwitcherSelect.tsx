@@ -5,6 +5,7 @@ import {useParams} from 'next/navigation';
 import {Locale} from 'next-intl';
 import {ChangeEvent, ReactNode, useTransition} from 'react';
 import {usePathname, useRouter} from '@/i18n/navigation';
+import { ChevronDown } from 'lucide-react';
 
 type Props = {
   children: ReactNode;
@@ -36,22 +37,28 @@ export default function LocaleSwitcherSelect({
   }
 
   return (
-    <label
+     <label
       className={clsx(
-        'relative text-gray-400',
-        isPending && 'transition-opacity [&:disabled]:opacity-30'
+        'relative block text-gray-400', // 'block' ensures it takes full width if needed, 'relative' for icon positioning
+        isPending && 'transition-opacity opacity-50 pointer-events-none' // More robust disabling
       )}
+      htmlFor="locale-select" // Associate label with select for accessibility
     >
-      <p className="sr-only">{label}</p>
-      <select
-        className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
-        defaultValue={defaultValue}
-        disabled={isPending}
-        onChange={onSelectChange}
-      >
-        {children}
-      </select>
-      <span className="pointer-events-none absolute right-2 top-[8px]">⌄</span>
+      <span className="sr-only">{label}</span> {/* Screen reader only label */}
+      <div className="flex items-center gap-2"> {/* Reduced gap for better visual balance */}
+        <select
+          id="locale-select" // Unique ID for accessibility
+          className="appearance-none bg-transparent py-2 pl-3 pr-8 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 rounded-md cursor-pointer" // Refined styling
+          defaultValue={defaultValue}
+          disabled={isPending}
+             onChange={onSelectChange}
+        >
+          {children}
+        </select>
+        <span className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2">
+          <ChevronDown className="h-4 w-4 text-gray-400" /> {/* Tailor icon size and color */}
+        </span>
+      </div>
     </label>
   );
 }
