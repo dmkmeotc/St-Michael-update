@@ -20,7 +20,7 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="w-full h-screen flex flex-col justify-between border-r text-ethGray-100 p-4 overflow-y-auto custom-scrollbar">
+    <aside className=" w-full h-screen flex flex-col justify-between border-r text-ethGray-100 p-4 overflow-y-auto custom-scrollbar">
       {/* Top Menu */}
       <nav className="flex flex-col gap-2">
         {menuItems.map((item) => {
@@ -30,7 +30,7 @@ export default function Sidebar() {
             <div key={item.label}>
               <div
                 onClick={() => toggle(item.label)}
-                className="flex items-center justify-between cursor-pointer rounded-md hover:opacity-50 transition-colors px-3 py-2"
+                className="flex items-center justify-start cursor-pointer rounded-md hover:opacity-50 transition-colors px-3 py-2"
               >
                 <span className="text-base font-medium">{item.label}</span>
                 {open[item.label] ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
@@ -68,7 +68,7 @@ export default function Sidebar() {
         })}
       </nav>
 
-      {/* Bottom QR and Share */}
+      {/* At Bottom QR and Share */}
       <div className="flex flex-col items-center justify-center gap-2 mt-6">
         <QRCodeCard
           value="https://st-michael-update.vercel.app/en/StMichael/"
