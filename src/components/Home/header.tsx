@@ -11,12 +11,12 @@ const Header = () => {
         <LocaleSwitcher />
       </div>
 
-      <div className='flex w-full justify-center items-start m-0'>
+      <div className='flex w-full  justify-center items-start m-0'>
         <Image
           src="/croos2.png"
           alt={t('holyCelebrationAlt')}
-          width={70}
-          height={150}
+          width={60}
+          height={120}
           className='m-0 p-0'
         />
       </div>  
