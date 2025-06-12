@@ -7,11 +7,11 @@ const Header = () => {
 
   return (
     <div>
-      <div className=" fixed top-2 right-2 m-4 z-50">
+      <div className=" fixed top-4 right-8  z-50">
         <LocaleSwitcher />
       </div>
 
-      <div className='flex w-full justify-center items-center m-0'>
+      <div className='flex w-full justify-center items-start m-0'>
         <Image
           src="/croos2.png"
           alt={t('holyCelebrationAlt')}

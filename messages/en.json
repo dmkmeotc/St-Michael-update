@@ -106,5 +106,8 @@
     "info": "Info",
     "meetings": "Meetings",
     "contactUs": "Contact Us"
+  },
+  "Lan":{
+    "language":"en"
   }
 }

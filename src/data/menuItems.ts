@@ -2,9 +2,10 @@ import { useTranslations } from 'next-intl';
 
 export const useMenuItems = () => {
   const t = useTranslations('Navigationmenu');
+  const L = useTranslations('Lan');
 
   return [
-    { label: t('home'), href: "/" },
+    { label: t('home'), href: `/${L('language')}` },
     { label: t('announcements'), href: "/announcements" },
     {
       label: t('deacons'),

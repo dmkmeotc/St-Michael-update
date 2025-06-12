@@ -6,6 +6,7 @@ import Link from "next/link"
 
 export function AnnouncementsCard() {
   const t = useTranslations('AnnouncementsCard')
+   const L = useTranslations('Lan');
 
   return (
     
@@ -21,7 +22,7 @@ export function AnnouncementsCard() {
           <p>{t('description')}</p>
         </h3>
 
-         <Link href="/en/StMichael/iframe-view/https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628/">
+         <Link href={`/${L('language')}/StMichael/StMichael/iframe-view/https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628/`}>
       <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 m-4">
            {t('buttonText')}
         </Button>

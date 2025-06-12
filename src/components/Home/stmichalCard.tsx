@@ -10,7 +10,7 @@ export function StMichalCard() {
   const t = useTranslations('StMichalCard')
   const tt=useTranslations('ContactInfo')
  
- 
+  const L = useTranslations('Lan');
 
   return (
     <Card className="w-full flex bg-transparent overflow-hidden rounded-none border-0 shadow-none m-0 p-0">
@@ -60,7 +60,7 @@ export function StMichalCard() {
 
     <div>
       <h1>Welcome</h1>
-      <Link href="/en/StMichael/iframe-view/https://kidusmichaeldc.org/">
+      <Link href={`/${L('language')}/StMichael/iframe-view/https://kidusmichaeldc.org/`}>
       <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 m-4">
            {t('buttonText')}
         </Button>

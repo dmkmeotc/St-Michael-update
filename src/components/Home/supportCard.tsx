@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export function SupportCard() {
   const t = useTranslations('SupportCard')
-
+ const L = useTranslations('Lan');
   return (
     <Card className="w-full overflow-hidden flex flex-col bg-transparent rounded-none border-0 shadow-none m-0 p-0 ">
       <CardContent>
@@ -19,13 +19,13 @@ export function SupportCard() {
               <AvatarFallback>RN</AvatarFallback>
             </Avatar>
           </div>
-          <div>
+          <div className=" place-self-end ">
           
 
 
 
- <Link href="/en/StMichael/iframe-view/https://checkout.square.site/merchant/153BEDB9ZJ3GS/checkout/PQKPNJHN452TVYGBGEJOI4L6/">
-      <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 m-4">
+ <Link href={`/${L('language')}/StMichael/iframe-view/https://checkout.square.site/merchant/153BEDB9ZJ3GS/checkout/PQKPNJHN452TVYGBGEJOI4L6/`}>
+      <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 ">
        <HandHelping size={48} />  {t('supportTitle')}
         </Button>
       </Link>

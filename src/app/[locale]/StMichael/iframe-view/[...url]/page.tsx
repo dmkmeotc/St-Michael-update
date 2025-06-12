@@ -1,5 +1,6 @@
 'use client';
 import Loading from '@/app/loading';
+
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -41,6 +42,8 @@ export default function IframeAutoViewer() {
 
   return (
     <div className="w-full h-full ">
+       
+      
       <div className="w-full h-full bg-white shadow-md rounded-lg overflow-hidden border border-gray-300">
         {isLoading ? (
           <div className="flex items-center justify-center h-full ">

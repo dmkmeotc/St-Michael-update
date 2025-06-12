@@ -75,6 +75,7 @@ export default function Sidebar() {
           text="Scan to Join"
           size={100}
         />
+        
         <ShareButtonWithModal
           shareTitle="Awesome Blog Post"
           shareText="Check out this blog post!"

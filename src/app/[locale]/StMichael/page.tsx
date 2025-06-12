@@ -7,6 +7,7 @@ import {setRequestLocale} from 'next-intl/server';
 import {Suspense, use} from 'react';
 import Loading from "../loading";
 
+
    type Props = {
      params: Promise<{locale: Locale}>;
    };
@@ -22,13 +23,14 @@ const Side = ({params}: Props) => {
 
     return ( 
 
-    <div  className=" grid grid-cols-1  place-items-center  mx-0  min-h-screen w-full  gap-2  mb-4 ">
+    <div  className="  flex flex-col    mx-0  min-h-screen w-full  space-y-2 mb-4 ">
        <Suspense fallback={<Loading/>}>
        <Header/>
        </Suspense>
          <Suspense fallback={<Loading/>}>
        <Homebody/>  
        </Suspense>
+       
     </div> );    
 }
  
