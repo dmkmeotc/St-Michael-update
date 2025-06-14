@@ -19,14 +19,14 @@ const Homebody = () => {
 
 
     return ( 
-      <div className="max-w-7xl mx-auto w-full relative ">
+      <div className=" mx-auto w-full relative ">
 
          <DotNav />
 <div className="h-2/3 sm:h-80 md:h-[400px] ">
  <Carousel autoPlay={false} interval={5000} infiniteLoop={true} showThumbs={false} showStatus={false} showIndicators={true}>
       <div>
       <div
-  className=" grid grid-cols-1 place-items-center sm:grid-cols-2 m-0 p-0 bg-[rgb(253,248,242)]  w-full px-8 border-2  "
+  className=" grid grid-cols-1 place-items-center md:grid-cols-2 m-0 p-0 bg-[rgb(253,248,242)]  w-full px-8 border-2  "
   style={{ gridTemplateRows: 'auto auto' }}
 >
   <div className="row-span-2">
