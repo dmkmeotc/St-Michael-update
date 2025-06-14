@@ -25,7 +25,7 @@ export function SupportCard() {
 
 
  <Link href={`/${L('language')}/StMichael/iframe-view/https://checkout.square.site/merchant/153BEDB9ZJ3GS/checkout/PQKPNJHN452TVYGBGEJOI4L6/`}>
-      <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold break-words text-left hover:bg-ethYellow-400 ">
+      <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-xl font-bold break-words text-left hover:bg-ethYellow-400 ">
        <HandHelping size={48} />  {t('supportTitle')}
         </Button>
       </Link>
