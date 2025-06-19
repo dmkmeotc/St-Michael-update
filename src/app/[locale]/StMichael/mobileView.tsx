@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 
 
-import { useTranslations } from 'next-intl'
+
 import {
   Sheet,
   SheetClose,
@@ -12,10 +12,10 @@ import {
 import { AlignLeft } from "lucide-react"
 import Sidebar from '../../../components/Sidebar';
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+
 
 export function  MobileView() {
-      const t = useTranslations('Header')
+  
   return (
     <div className="md:hidden fixed top-0 left-0 ">
     <Sheet   >

@@ -2,7 +2,7 @@
 
 import {  CardTitle } from "@/components/ui/card";
 import { QRCodeCanvas } from "qrcode.react";
-import { Sparkles } from "lucide-react"; // optional icon
+
 
 
 type QRCodeCardProps = {
