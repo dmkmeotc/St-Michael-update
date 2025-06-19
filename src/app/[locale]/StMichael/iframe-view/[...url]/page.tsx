@@ -44,7 +44,7 @@ export default function IframeAutoViewer() {
     <div className="w-full h-full ">
        
       
-      <div className="w-full h-full bg-white shadow-md rounded-lg overflow-hidden border border-gray-300">
+      <div className="w-full h-full bg-white shadow-md  overflow-hidden border border-gray-300">
         {isLoading ? (
           <div className="flex items-center justify-center h-full ">
             <Loading/>
@@ -52,7 +52,7 @@ export default function IframeAutoViewer() {
         ) : iframeUrl ? (
           <iframe
             src={iframeUrl}
-            className="w-full h-full border-none"
+            className="w-full h-full border-none "
             title="Embedded Website"
             sandbox="allow-scripts allow-same-origin"
           />

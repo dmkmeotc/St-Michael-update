@@ -11,6 +11,7 @@ import { Carousel } from "react-responsive-carousel";
 import Loading from "@/app/loading";
 import { Suspense } from "react";
 import Footer from "../Footer";
+import QRCodeCard from "../QRCodeCard";
           
          
 
@@ -53,16 +54,27 @@ const Homebody = () => {
 
  </div>
 
-<div className="bg-ethGreen-500  flex grow">
-       <h1>2</h1>
-        <p className="legend">Legend 2</p>
+<div className="w-full h-full bg-ethGray-100">
+       <div className="flex justify-between items-center gap-6 w-full  h-full p-16 ">
+        <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold">Become church member</h1>
+         
+            <QRCodeCard value="https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628"  text={''} size={300}/>
+        </div>
+   <div className="flex flex-col gap-4">
+            <h1 className="text-2xl font-bold">Join sunnday school</h1>
+         
+            <QRCodeCard value="https://your-website.com"  text={''} size={300}/>
+        </div>
+       </div>
+    
       </div>
       <div  className="bg-ethRed-500">
       <h1>3</h1>
         <p className="legend">Legend 3</p>
       </div>
     </Carousel>
-     < Footer/>
+   
 </div>
 
 </div>

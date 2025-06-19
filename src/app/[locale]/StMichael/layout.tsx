@@ -3,6 +3,7 @@ import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "@/componen
 import { MobileView } from "./mobileView";
 import { Suspense } from "react";
 import Loading from "../loading";
+import Footer from "@/components/Footer";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return <>
@@ -26,6 +27,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <ResizablePanel defaultSize={80}  >
             <div className="flex flex-col w-full h-screen overflow-y-auto items-start justify-start border-2 ">
               {children}
+                < Footer/>
             </div>
           </ResizablePanel>
         </ResizablePanelGroup>
@@ -56,6 +58,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         <div className="flex flex-col w-full h-screen overflow-y-auto items-start justify-start border-2">
           {children}
+           < Footer/>
         </div>
       </div>
     </main>

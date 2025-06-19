@@ -18,7 +18,7 @@ export default function QRCodeCard({ value,text,size }: QRCodeCardProps) {
       
       
   <div className="flex items-center justify-center gap-2 text-primary text-white">
-          <Sparkles className="w-5 h-5 animate-pulse" />
+       {/*    <Sparkles className="w-5 h-5 animate-pulse" /> */}
           <CardTitle className="text-lg font-semibold tracking-wide">{text}</CardTitle>
         </div>
 

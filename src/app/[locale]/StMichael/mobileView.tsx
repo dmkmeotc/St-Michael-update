@@ -25,20 +25,6 @@ export function  MobileView() {
             </Button>
       </SheetTrigger>
       <SheetContent side={"left"} className="bg-ethLightBlue-900">
-          <div className="w-full m-4 p-2">
-               <h1 className="mobile-church-name inline-flex">
-
-                 <Avatar className='w-12 h-12 m-[2px] place-self-center'>
-                          <AvatarImage src="/croos2.png" />
-                          <AvatarFallback>CN</AvatarFallback>
-                        </Avatar>
-                
-                {t('churchName')}
-                
-                </h1>
-
-
-          </div>
         
         <div className="grid flex-1 auto-rows-min gap-6 px-4">
          <Sidebar/>

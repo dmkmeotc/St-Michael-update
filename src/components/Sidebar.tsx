@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { ChevronDown, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
 
 import { cn } from '@/lib/utils'
 import QRCodeCard from './QRCodeCard'
@@ -22,7 +23,9 @@ export default function Sidebar() {
   return (
     <aside className=" w-full h-screen flex flex-col justify-between border-r text-ethGray-100 p-4 overflow-y-auto custom-scrollbar">
       {/* Top Menu */}
-      <nav className="flex flex-col gap-2">
+      <nav className="flex flex-col gap-2"> 
+      <div> <Image
+          src="/DMKM.png" width={100} height={100} alt="DMKM Logo"/></div> 
         {menuItems.map((item) => {
           const isActive = pathname === item.href
 
@@ -69,12 +72,29 @@ export default function Sidebar() {
       </nav>
 
       {/* At Bottom QR and Share */}
-      <div className="flex flex-col items-center justify-center gap-2 mt-6">
-        <QRCodeCard
-          value="https://st-michael-update.vercel.app/en/StMichael/"
-          text="Scan to Join"
-          size={100}
-        />
+      <div className="flex flex-col items-start justify-start gap-2 mt-6">
+
+       <div className="flex justify-between items-center gap-6 w-full  h-full p-2">
+        <div className='grid grid-cols-2 gap-4 w-full'>
+          <div>
+              <h1 className="text-sm font-bold">Become church member</h1>
+          </div>
+          <div>
+              <h1 className="text-sm font-bold">Join sunnday school</h1>
+          </div>
+          <div>
+             <QRCodeCard value="https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628"  text={''} size={100}/>
+          </div>
+          <div>
+    <QRCodeCard value="https://your-website.com"  text={''} size={100}/>
+          </div>
+
+
+        </div>
+               
+
+        </div>
+      
         
         <ShareButtonWithModal
           shareTitle="Awesome Blog Post"
