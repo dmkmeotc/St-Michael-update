@@ -26,7 +26,7 @@ const Homebody = () => {
         <DotNav />
         <div className="h-2/3 sm:h-80 md:h-[400px]">
           {/* UPDATED CAROUSEL PROPS HERE */}
-          <Carousel autoPlay={true} interval={10000} infiniteLoop={true} showThumbs={false} showStatus={false} showIndicators={true}>
+          <Carousel autoPlay={true} interval={100000} infiniteLoop={true} showThumbs={false} showStatus={false} showIndicators={true}>
             {/* ... (First Carousel Item) ... */}
             <div>
               <div

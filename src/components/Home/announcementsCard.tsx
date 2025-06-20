@@ -18,17 +18,15 @@ export function AnnouncementsCard() {
 
            <AvatarFallback>AN</AvatarFallback> {/* e.g., "AN" for Announcement */}
     </Avatar>
-        <h1 className="scroll-m-20 text-center text-2xl md:text-[1rem] lg:text-xl xl:text-2xl font-extrabold tracking-tight text-balance">
+        <h1 className="scroll-m-20 text-center text-2xl md:text-[1rem] lg:text-xl xl:text-2xl font-extrabold tracking-tight text-balance  hover:text-ethLightBlue-500 hover:underline">
           {t('title')}
         </h1>
-        <h3 className="scroll-m-20 text-xl md:text-[0.75rem] lg:text-[1.25rem] xl:text-xl font-semibold tracking-tight text-center">
-          <p>{t('description')}</p>
-        </h3>
+       
 
          <Link href={`/${L('language')}/StMichael/StMichael/iframe-view/https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628/`}>
-      <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 m-4">
-           {t('buttonText')}
-        </Button>
+      <h3 className="scroll-m-20 text-xl md:text-[0.75rem] lg:text-[1.25rem] xl:text-xl font-semibold tracking-tight text-center  hover:text-ethLightBlue-500 hover:underline">
+        {t('description')}
+      </h3>
       </Link>
        
       </CardHeader>
