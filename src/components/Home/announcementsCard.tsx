@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardHeader } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { useTranslations } from 'next-intl'
