@@ -1,7 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
+import { Avatar, AvatarImage } from "../ui/avatar"
 import { useTranslations } from 'next-intl'
-import QRCodeCard from "../QRCodeCard"
 import { HandHelping } from "lucide-react"
 import { Button } from "../ui/button"
 import Link from "next/link"

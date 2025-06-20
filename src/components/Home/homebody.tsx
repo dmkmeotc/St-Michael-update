@@ -12,7 +12,7 @@ import Loading from "@/app/loading";
 import { Suspense } from "react";
 
 import QRCodeCard from "../QRCodeCard";
-          
+     
          
 // ... (previous imports and code)
 
