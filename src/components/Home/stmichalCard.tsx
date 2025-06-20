@@ -9,7 +9,7 @@ import Link from "next/link"
 export function StMichalCard() {
   const t = useTranslations('StMichalCard')
   const tt=useTranslations('ContactInfo')
- 
+   const D = useTranslations('homeother');
   const L = useTranslations('Lan');
 
   return (
@@ -54,12 +54,8 @@ export function StMichalCard() {
           {tt('addressLine2')}
         </p>
       </div>
-
-     
-  
-
     <div>
-      <h1>Welcome</h1>
+      <h1>{D(`welcome`)}</h1>
       <Link href={`/${L('language')}/StMichael/iframe-view/https://kidusmichaeldc.org/`}>
       <Button className="w-full bg-ethYellow-300 text-ethBlack-500 text-2xl font-bold hover:bg-ethYellow-400 m-4">
            {t('buttonText')}

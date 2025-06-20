@@ -26,11 +26,7 @@ export default function PageLayout({children, title}: Props) {
             href={t('links.docs.href')}
             title={t('links.docs.title')}
           />
-          <ExternalLink
-            description={t('links.source.description')}
-            href={t('links.source.href')}
-            title={t('links.source.title')}
-          />
+      
         </div>
       </div>
     </div>

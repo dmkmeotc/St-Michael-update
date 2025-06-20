@@ -26,8 +26,8 @@
   "links": {
     "docs": {
       "description": "Explore our church documents and resources",
-      "href": "/documents",
-      "title": "Church Documents"
+      "href": "/",
+      "title": "Home"
     },
     "source": {
       "description": "View the source of our faith and traditions",
@@ -85,28 +85,23 @@
    "Navigationmenu": {
     "home": "Home",
     "announcements": "Announcements",
-    "deacons": "Deacons",
-    "allDeacons": "All Deacons",
-    "schedules": "Schedules",
-    "donation": "Donation",
-    "makeDonation": "Make a Donation",
-    "fundraisingEvents": "Fundraising Events",
-    "ourDiocese": "Our Diocese",
-    "ourChurch": "Our Church",
-    "about": "About",
-    "events": "Events",
-    "sundaySchool": "Sunday School",
-    "youthCorner": "Youth Corner",
-    "programs": "Programs",
-    "media": "Media",
-    "prayersQuotes": "Prayers & Quotes",
-    "morningPrayers": "Morning Prayers",
-    "quotes": "Quotes",
-    "holyFamily": "Holy Family",
-    "info": "Info",
-    "meetings": "Meetings",
-    "contactUs": "Contact Us"
+    "RequestConfessor": "Request a Confessor Father",
+    "SundaySchool": "Sunday School Application ",
+    "ChildrensProgram": "Children's Program Application",
+    "ChurchMembership": "Church Membership Application",
+    "OtherService": "Other Service Request Form",
+      "makeDonation": "Make a Donation",
+    "about": "About the Church"
+    
+     
   },
+  
+  "homeother": {
+    "welcome": "Welcome",
+    "becomeChurchMember": "Become a Church Member",
+    "joinSundaySchool": "Join Sunday School"
+  }
+,
   "Lan":{
     "language":"en"
   }

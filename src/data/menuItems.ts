@@ -5,52 +5,19 @@ export const useMenuItems = () => {
   const L = useTranslations('Lan');
 
   return [
-    { label: t('home'), href: `/${L('language')}` },
-    { label: t('announcements'), href: "/announcements" },
-    {
-      label: t('deacons'),
-      children: [
-        { label: t('allDeacons'), href: "/deacons" },
-        { label: t('schedules'), href: "/deacons/schedules" },
-      ],
-    },
-    {
-      label: t('donation'),
-      children: [
-        { label: t('makeDonation'), href: "/donation" },
-        { label: t('fundraisingEvents'), href: "/donation/events" },
-      ],
-    },
-    { label: t('ourDiocese'), href: "/diocese" },
-    {
-      label: t('ourChurch'),
-      children: [
-        { label: t('about'), href: "/church/about" },
-        { label: t('events'), href: "/church/events" },
-      ],
-    },
-    { label: t('sundaySchool'), href: "/sunday-school" },
-    {
-      label: t('youthCorner'),
-      children: [
-        { label: t('programs'), href: "/youth/programs" },
-        { label: t('media'), href: "/youth/media" },
-      ],
-    },
-    {
-      label: t('prayersQuotes'),
-      children: [
-        { label: t('morningPrayers'), href: "/prayers/morning" },
-        { label: t('quotes'), href: "/quotes" },
-      ],
-    },
-    {
-      label: t('holyFamily'),
-      children: [
-        { label: t('info'), href: "/holy-family/info" },
-        { label: t('meetings'), href: "/holy-family/meetings" },
-      ],
-    },
-    { label: t('contactUs'), href: "/contact" },
+    { label: t('home'), href: `/${L('language')}/StMichael` },
+    { label: t('announcements'), href:`/${L('language')}/StMichael/iframe-view/https://kidusmichaeldc.org/blog/`},
+     { label: t('RequestConfessor'), href:`/${L('language')}/StMichael/comingpage`},
+     { label: t('SundaySchool'), href:`/${L('language')}/StMichael/comingpage`},
+     { label: t('ChildrensProgram'), href:`/${L('language')}/StMichael/comingpage`},
+     { label: t('OtherService'),  href:`/${L('language')}/StMichael/comingpage`},
+     { label: t('makeDonation'), href:`/${L('language')}/StMichael/iframe-view/https://kidusmichaeldc.org/donate/`},
+     { label: t('about'), href:`/${L('language')}/StMichael/iframe-view/https://kidusmichaeldc.org/about/`},
+     
+    
+    
+   
   ];
 };
+
+ 
