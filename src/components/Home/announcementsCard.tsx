@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader } from "@/components/ui/card"
-import { Avatar, AvatarFallback } from "../ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar"
 import { useTranslations } from 'next-intl'
 import Link from "next/link"
 
@@ -12,9 +12,12 @@ export function AnnouncementsCard() {
     
     <Card className="w-full flex bg-transparent overflow-hidden rounded-none border-0 shadow-none m-0 p-0">
       <CardHeader>
-        <Avatar className='w-24 h-24 m-[2px] place-self-center'>
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+      <Avatar className='w-24 h-24 m-[2px] place-self-center'>
+     
+      <AvatarImage src="/Anouncement.png" alt="Announcement Icon" />
+
+           <AvatarFallback>AN</AvatarFallback> {/* e.g., "AN" for Announcement */}
+    </Avatar>
         <h1 className="scroll-m-20 text-center text-2xl md:text-[1rem] lg:text-xl xl:text-2xl font-extrabold tracking-tight text-balance">
           {t('title')}
         </h1>

@@ -77,10 +77,10 @@ export default function Sidebar() {
        <div className="flex justify-between items-center gap-6 w-full  h-full p-2">
         <div className='grid grid-cols-2 gap-4 w-full'>
           <div>
-              <h1 className="text-sm font-bold">Become church member</h1>
+              <h1 className="text-sm font-bold">Become a Church Member</h1>
           </div>
           <div>
-              <h1 className="text-sm font-bold">Join sunnday school</h1>
+              <h1 className="text-sm font-bold">Join Sunday School</h1>
           </div>
           <div>
              <QRCodeCard value="https://docs.google.com/forms/d/e/1FAIpQLSdVlOcEkZVK9dOmoLSH5pNjjjYcgfewWNgqSSRabTAAeWzjyg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628"  text={''} size={100}/>
